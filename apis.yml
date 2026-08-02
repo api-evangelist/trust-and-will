@@ -1,7 +1,30 @@
 aid: trust-and-will
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/trust-and-will.png
 name: Trust & Will
-description: Trust & Will is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Trust & Will is a digital estate planning platform, headquartered in San Diego,
+  California and founded in 2017, that lets individuals and families create legally
+  valid, state-specific estate planning documents entirely online. Members build
+  will-based or trust-based estate plans and related documents such as guardianship
+  designations, powers of attorney, and advance healthcare directives, and the
+  company also offers probate support and nationwide notarization. Trust & Will
+  distributes through direct-to-consumer subscriptions as well as B2B partnerships
+  with financial advisors, wealth managers, and employers offering it as a benefit.
+  The platform is SOC 2 and HIPAA compliant. It was surfaced in the API Evangelist
+  network as a Techstars portfolio company; this enrichment pass found no public
+  developer API, SDK, or developer portal, but did confirm a live security program
+  and trust posture.
 url: https://raw.githubusercontent.com/api-evangelist/trust-and-will/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Estate Planning
+- Legal
+- Wills And Trusts
+- Financial Services
+- Legaltech
+- Fintech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,24 @@ maintainers:
 common:
 - type: Website
   url: https://trustandwill.com/
+- type: Login
+  url: https://app.trustandwill.com/login
+- type: Pricing
+  url: https://trustandwill.com/compare
+- type: Blog
+  url: https://trustandwill.com/learn/
+- type: Security
+  url: https://trustandwill.com/security
+- type: Compliance
+  url: https://trustandwill.com/security
+- type: TrustCenter
+  url: security/trust-and-will-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/trust-and-will-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/trust-and-will-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
